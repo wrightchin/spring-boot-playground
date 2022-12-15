@@ -7,7 +7,15 @@ docker run --name postgres-spring -e POSTGRES_PASSWORD=password -d -p 5432:5432 
 
 docker exec -it [contsiner_id] bin/bash
 ```
-Create the database "demodb"
+Connect to the PostgresDB server
+```agsl
+psql -U [db_username]
+```
+List the list of database
+```agsl
+\l
+```
+Create database "demodb"
 ```agsl
 CREATE DATABASE demodb
 ```
